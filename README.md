@@ -39,7 +39,6 @@ mvn allure:serve
 ## CI/CD
 
 Тесты запускаются автоматически при каждом push в `main` через GitHub Actions.  
-Статус: ![CI](https://github.com/attachment4/qa-automation-portfolio/actions/workflows/ci.yml/badge.svg)
 
 ## Покрытие
 
