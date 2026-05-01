@@ -5,7 +5,7 @@
 
 ## Стек
 
-- Java 21
+- Java 17
 - Selenium WebDriver 4
 - REST Assured 5
 - JUnit 5
