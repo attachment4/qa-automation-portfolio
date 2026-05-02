@@ -14,3 +14,35 @@
 - Maven
 
 ## Структура проекта
+src/
+├── main/java/ru/netology/qa/
+│   ├── config/          # Настройки драйвера и API
+│   └── pages/           # Page Object Model
+└── test/java/ru/netology/qa/
+├── api/             # API тесты (reqres.in)
+├── models/          # POJO модели
+└── ui/              # UI тесты (demoblaze.com)
+
+## Запуск тестов
+
+```bash
+mvn test
+```
+
+## Allure отчёт
+
+```bash
+mvn allure:serve
+```
+
+## CI/CD
+
+Тесты запускаются автоматически при каждом push в `main` через GitHub Actions.  
+Статус: ![CI](https://github.com/ТУТ_ТВОЙ_ЮЗЕРНЕЙМ/qa-automation-portfolio/actions/workflows/ci.yml/badge.svg)
+
+## Покрытие
+
+| Модуль | Тесты |
+|--------|-------|
+| API (reqres.in) | GET user, POST user, 404 not found |
+| UI (demoblaze.com) | Авторизация |
