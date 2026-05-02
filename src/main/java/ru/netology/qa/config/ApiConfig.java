@@ -7,7 +7,7 @@ import io.restassured.filter.log.ResponseLoggingFilter;
 
 public class ApiConfig {
 
-    public static final String API_KEY = "free_user_3D8MrbtBeMXE4jih8xpKF7hQNTG";
+    public static final String API_KEY = System.getenv("REQRES_API_KEY");
 
     public static void setup() {
         RestAssured.baseURI = "https://reqres.in";
