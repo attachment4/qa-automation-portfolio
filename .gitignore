@@ -18,4 +18,4 @@ allure-report/
 Thumbs.db
 
 # Secrets — никогда не коммитить ключи!
-src/main/resources/config.properties
+src/test/resources/config.properties
