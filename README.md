@@ -5,7 +5,7 @@
 
 ## Стек
 
-- Java 21
+- Java 17
 - Selenium WebDriver 4
 - REST Assured 5
 - JUnit 5
@@ -14,6 +14,7 @@
 - Maven
 
 ## Структура проекта
+<<<<<<< HEAD
 src/
 ├── main/java/ru/netology/qa/
 │   ├── config/          # Настройки драйвера и API
@@ -46,3 +47,5 @@ mvn allure:serve
 |--------|-------|
 | API (reqres.in) | GET user, POST user, 404 not found |
 | UI (demoblaze.com) | Авторизация |
+=======
+>>>>>>> 8ea25b5378c54187803848221ec8ea948540dbb5
