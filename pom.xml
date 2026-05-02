@@ -126,7 +126,18 @@
                 <version>3.2.5</version>
                 <configuration>
                     <argLine>-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.22/aspectjweaver-1.9.22.jar"</argLine>
+                    <excludes>
+                        <exclude>ru/netology/qa/runner/CucumberRunner.class</exclude>
+                    </excludes>
+                    <includes>
+                        <include>**/*Test.class</include>
+                    </includes>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.3.1</version>
             </plugin>
             <plugin>
                 <groupId>io.qameta.allure</groupId>

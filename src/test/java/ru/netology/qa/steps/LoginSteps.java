@@ -6,12 +6,12 @@ import io.cucumber.java.Before;
 import io.cucumber.java.ru.*;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class LoginSteps {
 
     @Before
     public void setUp() {
-        // Selenide сам управляет драйвером — не нужен DriverManager
         com.codeborne.selenide.Configuration.browser = "chrome";
         com.codeborne.selenide.Configuration.baseUrl = "https://www.demoblaze.com";
     }
@@ -46,7 +46,9 @@ public class LoginSteps {
 
     @Тогда("появляется сообщение об ошибке")
     public void checkErrorAlert() {
-        // Selenide умеет работать с алертами
-        Selenide.confirm(); // или dismiss()
+        String alertText = Selenide.switchTo().alert().getText();
+        Selenide.switchTo().alert().dismiss();
+        assertTrue(alertText.contains("Wrong password."),
+                "Ожидали сообщение 'Wrong password.', получили: " + alertText);
     }
 }
