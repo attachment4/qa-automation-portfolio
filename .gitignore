@@ -1,0 +1,21 @@
+# Maven
+target/
+*.class
+*.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Allure results (генерируются при запуске)
+allure-results/
+allure-report/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets — никогда не коммитить ключи!
+src/main/resources/config.properties
