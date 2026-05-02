@@ -1,49 +1,90 @@
-# QA Automation Portfolio
+# Привет, я Иван 👋
 
-Учебный проект автоматизации тестирования на Java.  
-Покрывает UI и API тесты с отчётностью через Allure.
+Начинающий QA Automation Engineer из Ульяновска.  
+Учусь на курсе Нетологии по направлению QA-автоматизация, активно практикуюсь и строю портфолио.
 
-## Стек
+---
 
-- Java 17
-- Selenium WebDriver 4
-- REST Assured 5
-- JUnit 5
-- Allure Report
-- GitHub Actions (CI/CD)
-- Maven
+## 🛠 Технический стек
 
-## Структура проекта
-<<<<<<< HEAD
-src/
-├── main/java/ru/netology/qa/
-│   ├── config/          # Настройки драйвера и API
-│   └── pages/           # Page Object Model
-└── test/java/ru/netology/qa/
-├── api/             # API тесты (reqres.in)
-├── models/          # POJO модели
-└── ui/              # UI тесты (demoblaze.com)
+**Автоматизация**
+- Java 21 — основной язык
+- Selenium WebDriver 4 — UI автоматизация
+- Selenide 7 — лаконичные UI тесты поверх Selenium
+- REST Assured 5 — API тестирование
+- Cucumber 7 (BDD) — тесты на языке Gherkin
+- JUnit 5 — фреймворк для тестов
+- Allure Report — отчётность
+- Maven — сборка проекта
+- GitHub Actions — CI/CD
 
-## Запуск тестов
+**Ручное тестирование**
+- Тест-дизайн (эквивалентное разбиение, граничные значения, попарное тестирование)
+- Составление тест-кейсов и чек-листов
+- Баг-репорты
+- Тестовая документация
 
-```bash
-mvn test
-```
+**Инструменты**
+- Git / GitHub
+- Chrome DevTools
+- Postman
+- IntelliJ IDEA
 
-## Allure отчёт
+**Базовые знания**
+- Клиент-серверная архитектура
+- HTTP / REST API
+- Жизненный цикл разработки ПО (SDLC)
+- Гибкие методологии (Agile, Scrum)
 
-```bash
-mvn allure:serve
-```
+---
 
-## CI/CD
+## 📂 Проекты
 
-Тесты запускаются автоматически при каждом push в `main` через GitHub Actions.  
+### [qa-automation-portfolio](https://github.com/attachment4/qa-automation-portfolio)
+Фреймворк автоматизации с UI и API тестами.
 
-## Покрытие
+- **UI тесты** — Selenium + Selenide + Page Object Model на demoblaze.com
+- **BDD тесты** — Cucumber + Gherkin сценарии (позитивные и негативные)
+- **API тесты** — REST Assured на reqres.in (GET, POST, негативные сценарии)
+- **CI/CD** — GitHub Actions, автозапуск при каждом push
+- **Отчёты** — Allure Report с описанием шагов
 
-| Модуль | Тесты |
-|--------|-------|
-| API (reqres.in) | GET user, POST user, 404 not found |
-| UI (demoblaze.com) | Авторизация |
+**Стек:** Java · Selenium · Selenide · Cucumber · REST Assured · JUnit 5 · Allure · Maven · GitHub Actions
 
+---
+
+### [AviaSouls](https://github.com/attachment4/TicketAirPlaneJava)
+Покрытие тестами менеджера авиабилетов.
+
+- Comparable / Comparator — сортировка по цене и времени в полёте
+- JUnit 5 тесты: позитивные, негативные и граничные сценарии
+
+**Стек:** Java · JUnit 5 · Maven
+
+---
+
+## 📚 Образование
+
+**Нетология** — QA Automation Engineer *(в процессе, 2025–2026)*  
+Пройдено: введение в тестирование, тест-дизайн, Git, Java, Maven, JUnit 5, ООП, CI/CD
+
+**СПО** — Разработчик веб и мультимедийных приложений
+
+---
+
+## 💼 Опыт
+
+**Системный администратор / Информационная безопасность** — 1.5 года 
+Администрирование систем, работа с сетевой инфраструктурой, обеспечение информационной безопасности.
+
+---
+
+## 📫 Контакты
+
+- Telegram: @attach4
+- Email: karavashkinivan1995@gmail.com
+- Город: Ульяновск | Готов к удалённой работе
+
+---
+
+*Портфолио пополняется по мере прохождения курса* 🚀
